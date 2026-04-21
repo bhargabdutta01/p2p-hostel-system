@@ -1,0 +1,67 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #eef2f3;
+}
+
+header {
+  background: #0a6ed1;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  background: #354a5f;
+  padding: 10px;
+  text-align: center;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px;
+  background: #5899da;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+nav button:hover {
+  background: #1f6fb2;
+}
+
+#content {
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  margin-left: 10px;
+}
+
+.approved { background: green; }
+.pending { background: orange; }
+.delivered { background: blue; }
+.paid { background: purple; }
+
+.center {
+  text-align: center;
+  margin-top: 100px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+}

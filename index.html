@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>P2P Hostel Pro</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!-- LOGIN SCREEN -->
+<div id="loginPage" class="center">
+  <h2>Login</h2>
+  <input id="username" placeholder="Username"><br>
+  <input id="password" type="password" placeholder="Password"><br>
+  <button onclick="login()">Login</button>
+</div>
+
+<!-- APP -->
+<div id="app" style="display:none;">
+
+<header>
+  <h1>Hostel Procurement System</h1>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<nav>
+  <button onclick="loadPage('dashboard')">Overview</button>
+  <button onclick="loadPage('requests')">Requests</button>
+  <button onclick="loadPage('orders')">Orders</button>
+  <button onclick="loadPage('delivery')">Delivery</button>
+  <button onclick="loadPage('billing')">Billing</button>
+</nav>
+
+<div id="content"></div>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
